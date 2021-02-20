@@ -7,7 +7,7 @@ const people = [
     title: 'data scientist',
     url: 'https://github.com/youpele52',
     quote:
-      'The people who are crazy enough to think they can change the world are the ones who do. ~ Steve Jobs',
+      'Help others achieve their dreams and you will achieve yours. ~ Les Brown',
   },
   {
     id: 8,
