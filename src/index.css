@@ -221,7 +221,8 @@ article h4 {
 }
 .prev:hover,
 .next:hover {
-  background: var(--clr-primary-5);
+  /* background: var(--clr-primary-5); */
+  background: greenyellow;
 }
 .prev {
   left: 0;
@@ -268,4 +269,8 @@ article.nextSlide {
   background: greenyellow;
   margin-left: auto;
   margin-right: auto;
+}
+
+a:hover {
+  color: greenyellow;
 }

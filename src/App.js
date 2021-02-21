@@ -23,7 +23,7 @@ function App() {
     // every 3 seconds change the slides
     let autoplay = setInterval(() => {
       setIndex(index + 1)
-    }, 4000)
+    }, 5000)
     // using our cleanup func to make sure that our slider dont run mad
     return () => clearInterval(autoplay)
     // this useEffect runs again, once our index changes
