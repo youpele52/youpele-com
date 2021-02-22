@@ -59,7 +59,9 @@ function App() {
               <h4>{name}</h4>
               <p className='title'>{title}</p>
 
-              <a href={url}>Projects/Works</a>
+              <a href={url} target='_blank' rel='noopener noreferrer'>
+                Projects/Works
+              </a>
               <div className='underline'></div>
               <p className='quote'>{quote}</p>
               <FaQuoteRight className='icon' />
