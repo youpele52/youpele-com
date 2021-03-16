@@ -2,12 +2,14 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
+import { AppProvider, useGlobalContext } from './context'
 // import Alternative from './Alternative'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
-    {/* <Alternative /> */}
+    <AppProvider>
+      <App />
+    </AppProvider>
   </React.StrictMode>,
   document.getElementById('root')
 )
