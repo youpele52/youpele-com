@@ -4,7 +4,9 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Home from './pages/Home'
 
 // import components
-import Modal from './components/Modal'
+import Footer from './components/footer'
+
+// import Modal from './components/Modal'
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App() {
           <Error />
         </Route> */}
       </Switch>
+      <Footer />
     </Router>
   )
 }
