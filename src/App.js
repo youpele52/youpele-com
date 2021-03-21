@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Home from './pages/Home'
 
 // import components
-import Footer from './components/footer'
+import Footer from './components/Footer'
 
 // import Modal from './components/Modal'
 

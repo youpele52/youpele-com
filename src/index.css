@@ -333,19 +333,20 @@ Footer
 ===============
 */
 .footer {
-  height: 9rem;
+  height: 6rem;
   background: #222;
-  /* background: var(--clr-black); */
+  background: #040c1a;
+  /* background: #000f21; */
   text-align: center;
   display: grid;
   place-items: center;
 }
 .footer h4 {
   margin-top: 0.5rem;
-  color: var(--clr-white);
+  margin-bottom: 1rem;
   color: var(--clr-grey-5);
   font-weight: normal;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 .footer h4 span {
   color: var(--clr-the-blues);
@@ -354,9 +355,22 @@ Footer
   margin: 0 auto 1rem auto;
 }
 .footer .social-link {
-  color: var(--clr-white);
+  /* color: var(--clr-white); */
   color: var(--clr-grey-5);
 }
 .footer .social-link:hover {
   color: var(--clr-the-green);
+}
+
+/* social links */
+.social-links {
+  margin-top: 1rem;
+  width: 7rem;
+  display: flex;
+  justify-content: space-between;
+}
+.social-link {
+  font-size: 1.2rem;
+  color: var(--clr-grey-1);
+  transition: var(--transition);
 }
