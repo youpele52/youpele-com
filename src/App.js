@@ -2,6 +2,9 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 // import pages
 import Home from './pages/Home'
+import About from './pages/About'
+import Poetry from './pages/Poetry'
+import Projects from './pages/Projects'
 
 // import components
 import Footer from './components/Footer'
@@ -16,10 +19,16 @@ function App() {
         <Route exact path='/'>
           <Home />
         </Route>
-        {/* <Route path='/about'>
+        <Route path='/about'>
           <About />
         </Route>
-        <Route path='/cocktail/:id'>
+        <Route path='/poetry'>
+          <Poetry />
+        </Route>
+        <Route path='/projects'>
+          <Projects />
+        </Route>
+        {/* <Route path='/cocktail/:id'>
           <SingleCocktail />
         </Route>
         <Route path='*'>
