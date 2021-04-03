@@ -1,10 +1,13 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { Navbar } from './components'
+import { Home, About, Poetry, Projects, Error } from './pages'
+
 // import pages
-import Home from './pages/Home'
-import About from './pages/About'
-import Poetry from './pages/Poetry'
-import Projects from './pages/Projects'
+// import Home from './pages/Home'
+// import About from './pages/About'
+// import Poetry from './pages/Poetry'
+// import Projects from './pages/Projects'
 
 // import components
 import Footer from './components/Footer'
@@ -15,12 +18,10 @@ function App() {
   return (
     // wrapping our app content with the router
     <Router>
+      <Navbar />
       <Switch>
         <Route exact path='/'>
           <Home />
-        </Route>
-        <Route path='/about'>
-          <About />
         </Route>
         <Route path='/poetry'>
           <Poetry />
@@ -28,12 +29,12 @@ function App() {
         <Route path='/projects'>
           <Projects />
         </Route>
-        {/* <Route path='/cocktail/:id'>
-          <SingleCocktail />
+        <Route path='/about'>
+          <About />
         </Route>
-        <Route path='*'>
+        <Route exact path='/*'>
           <Error />
-        </Route> */}
+        </Route>
       </Switch>
       <Footer />
     </Router>
