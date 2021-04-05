@@ -195,8 +195,8 @@ article h4 {
   margin-bottom: 0.25rem;
 }
 .title {
-  /* text-transform: capitalize; */
-  /* text-transform: capitalize; */
+  text-transform: capitalize;
+
   margin-bottom: 0.75rem;
   color: var(--clr-grey-3);
   color: var(--clr-grey-9);
