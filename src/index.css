@@ -195,7 +195,8 @@ article h4 {
   margin-bottom: 0.25rem;
 }
 .title {
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
+  /* text-transform: capitalize; */
   margin-bottom: 0.75rem;
   color: var(--clr-grey-3);
   color: var(--clr-grey-9);
@@ -332,8 +333,10 @@ Modal
   cursor: pointer;
 }
 
-/*
-===============
-Footer
-===============
-*/
+.page-100 {
+  min-height: calc(100vh - 10rem);
+  padding: 5rem 0;
+}
+.page {
+  min-height: calc(100vh - (20vh + 10rem));
+}
