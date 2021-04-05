@@ -1,4 +1,4 @@
-import axios from 'axios'
+// import axios from 'axios'
 import React, { useContext, useEffect, useReducer } from 'react'
 import reducer from '../reducers/sidebar_reducer'
 import { SIDEBAR_OPEN, SIDEBAR_CLOSE } from '../actions'
