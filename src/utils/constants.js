@@ -9,12 +9,12 @@ export const links = [
   {
     id: 3,
     text: 'Poetry',
-    url: '/Poetry',
+    url: '/poetry',
   },
   {
     id: 4,
     text: 'Projects',
-    url: '/Projects',
+    url: '/projects',
   },
   {
     id: 2,

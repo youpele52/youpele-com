@@ -4,11 +4,13 @@ import logo from '../assets/pic.png'
 import { FaBars } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { links } from '../utils/constants'
+import { useSidebarContext } from '../context/sidebar_context'
 // import CartButtons from './CartButtons'
 // import { useProductsContext } from '../context/products_context'
 // import { useUserContext } from '../context/user_context'
 
 const Nav = () => {
+  const { openSidebar } = useSidebarContext()
   return (
     <NavContainer>
       <div className='nav-center'>
@@ -16,10 +18,10 @@ const Nav = () => {
           {/* Link comp from react-router dom */}
           {/* link to the home page */}
           <Link to='/'>
-            <img src={logo} alt='comfy sloth' />
+            <img src={logo} alt='Youpele' />
           </Link>
           {/* the type here is necessary for the html */}
-          <button className='nav-toggle' type='button'>
+          <button className='nav-toggle' type='button' onClick={openSidebar}>
             <FaBars />
           </button>
         </div>

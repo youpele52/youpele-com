@@ -2,14 +2,14 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
-import { AppProvider, useGlobalContext } from './context'
+import { SidebarProvider } from './context/sidebar_context'
+
+// import { AppProvider, useGlobalContext } from './context'
 // import Alternative from './Alternative'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <AppProvider>
-      <App />
-    </AppProvider>
-  </React.StrictMode>,
+  <SidebarProvider>
+    <App />
+  </SidebarProvider>,
   document.getElementById('root')
 )
