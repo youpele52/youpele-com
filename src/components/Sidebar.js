@@ -54,10 +54,12 @@ const SidebarContainer = styled.div`
     transition: var(--transition);
     cursor: pointer;
     color: var(--clr-red-dark);
+    color: var(--clr-the-green);
     margin-top: 0.2rem;
   }
   .close-btn:hover {
     color: var(--clr-red-light);
+    color: var(--clr-the-green);
   }
   .logo {
     justify-self: center;
