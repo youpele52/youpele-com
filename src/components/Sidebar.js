@@ -1,14 +1,36 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import logo from '../assets/pic.png'
 import { FaTimes } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { links } from '../utils/constants'
 import { useSidebarContext } from '../context/sidebar_context'
+import Switch from './Switch'
 
+const getStorageTheme = () => {
+  let theme = 'dark-theme'
+  if (localStorage.getItem('theme')) {
+    theme = localStorage.getItem('theme')
+  }
+  return { theme }
+}
 const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useSidebarContext()
+  const [theme, setTheme] = useState(getStorageTheme().theme)
+  const toggleTheme = () => {
+    if (theme === 'dark-theme') {
+      setTheme('light-theme')
+    } else {
+      setTheme('dark-theme')
+    }
+  }
 
+  useEffect(() => {
+    // here we are accessing the HTML document
+    document.documentElement.className = theme
+
+    localStorage.setItem('theme', theme)
+  }, [theme])
   return (
     <SidebarContainer>
       <aside
@@ -29,8 +51,16 @@ const Sidebar = () => {
                 </Link>
               </li>
             )
-          })}
+          })}{' '}
+          <div className='dark-mode-toggle' onClick={closeSidebar}>
+            <Switch
+              isOn={theme === 'dark-theme' ? true : false}
+              onColor='greenyellow'
+              handleToggle={toggleTheme}
+            />
+          </div>
           <li></li>
+          {/* <li></li> */}
         </ul>
       </aside>
     </SidebarContainer>
@@ -40,6 +70,12 @@ const Sidebar = () => {
 const SidebarContainer = styled.div`
   text-align: center;
 
+  .dark-mode-toggle {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    // align-items: center;
+  }
   .sidebar-header {
     display: flex;
     justify-content: space-between;
@@ -50,10 +86,10 @@ const SidebarContainer = styled.div`
     font-size: 2rem;
     background: transparent;
     border-color: transparent;
-    color: var(--clr-primary-5);
+    // color: var(--clr-primary-5);
     transition: var(--transition);
     cursor: pointer;
-    color: var(--clr-red-dark);
+    // color: var(--clr-red-dark);
     color: var(--clr-the-green);
     margin-top: 0.2rem;
   }
@@ -75,7 +111,7 @@ const SidebarContainer = styled.div`
     font-size: 1rem;
     text-transform: capitalize;
     padding: 1rem 1.5rem;
-    color: var(--clr-grey-3);
+    color: var(--clr-normal-text);
     transition: var(--transition);
     letter-spacing: var(--spacing);
   }
@@ -86,6 +122,7 @@ const SidebarContainer = styled.div`
     // background: var(--clr-grey-10);
     color: var(--clr-grey-2);
     color: var(--clr-the-green);
+    color: greenyellow;
   }
 
   .sidebar {
@@ -95,7 +132,7 @@ const SidebarContainer = styled.div`
     width: 100%;
     height: 100%;
     background: var(--clr-white);
-    background: #040c1a;
+    background: var(--clr-sidebar);
     transition: var(--transition);
     transform: translate(-100%);
     z-index: -1;

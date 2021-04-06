@@ -26,7 +26,7 @@ const Wrapper = styled.footer`
 
     height: 6rem;
     background: #222;
-    background: #040c1a;
+    background: var(--clr-footer-navbar);
     /* background: #000f21; */
     text-align: center;
     display: grid;
@@ -36,6 +36,8 @@ const Wrapper = styled.footer`
     margin-top: 0.5rem;
     margin-bottom: 1rem;
     color: var(--clr-grey-5);
+    color: var(--clr-normal-text);
+
     font-weight: normal;
     /* text-transform: uppercase; */
   }
@@ -47,7 +49,7 @@ const Wrapper = styled.footer`
   }
   .footer .social-link {
     /* color: var(--clr-white); */
-    color: var(--clr-grey-5);
+    color: var(--clr-normal-text);
   }
   .footer .social-link:hover {
     color: var(--clr-the-green);
