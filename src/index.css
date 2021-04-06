@@ -12,7 +12,10 @@ Variables
   /* --clr-primary: #d23669; */
   --clr-primary: #4fa6f7;
   --clr-normal-text: hsl(210, 22%, 49%);
-  --clr-page-title: hsl(212, 33%, 89%);
+  --clr-normal-text: hsl(211, 27%, 70%);
+  /* --clr-normal-text: hsl(210, 31%, 80%); */
+  /* --clr-page-title: hsl(212, 33%, 89%); */
+  --clr-page-title: white;
 
   --clr-footer-navbar: #040c1a;
   --clr-sidebar: rgba(0, 0, 0, 0.92);
