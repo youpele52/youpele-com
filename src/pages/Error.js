@@ -18,15 +18,16 @@ const ErrorPage = () => {
           good clue is if it comes with a manual. ~ Douglas Adams
         </p>
         <Link to='/' className='btn'>
-          Back home
+          Return home
         </Link>
+        <div className='underline'></div>
       </section>
     </Wrapper>
   )
 }
 
 const Wrapper = styled.main`
-  background: black;
+  // background: black;
   // display: flex;
   // justify-content: center;
   // align-items: center;
@@ -35,9 +36,9 @@ const Wrapper = styled.main`
   h1 {
     font-size: 10rem;
   }
-  h2 {
-    color: var(--clr-grey-9);
-  }
+  // h2 {
+  //   color: var(--clr-grey-9);
+  // }
   h3 {
     text-transform: none;
     margin-bottom: 2rem;
