@@ -23,7 +23,9 @@ const Project = ({
         </div>
         <div className='project-footer'>
           <h3>{title} </h3>
-          <p>Tech: {techstack}</p>
+          <p>
+            <span>Tech: </span> {techstack}
+          </p>
           <div>
             <a href={github} target='_blank' rel='noopener noreferrer'>
               <FaGithub className='social-icon'> </FaGithub>
@@ -84,5 +86,8 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: center;
     background: ;
+  }
+  p span {
+    text-decoration: bold;
   }
 `
