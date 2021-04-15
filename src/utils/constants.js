@@ -1,4 +1,6 @@
 import React from 'react'
+import youpelepoetry from '../assets/project_img/youpele_poetry.png'
+
 export const links = [
   {
     id: 1,

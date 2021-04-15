@@ -35,6 +35,16 @@ Variables
   --border-radius: 8px;
   /* pre,next button  */
   --clr-grey-5: hsl(210, 22%, 49%);
+  /* project styling */
+  --mainSpacing: 0.3rem;
+  --smallWidth: 90vw;
+  --maxWidth: 40rem;
+  --fullWidth: 1170px;
+  --mainWhite: #fff;
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --darkShadow: 4px 10px 5px 0px rgba(188, 204, 220, 0.5);
+  --mainTransition: all 0.3s linear;
+  --mainBorderRadius: 0.25rem;
 }
 
 .light-theme {
@@ -66,6 +76,16 @@ Variables
   --border-radius: 8px;
   /* pre,next button  */
   --clr-grey-5: hsl(210, 22%, 49%);
+  /* project styling */
+  --mainSpacing: 0.3rem;
+  --smallWidth: 85vw;
+  --maxWidth: 40rem;
+  --fullWidth: 1170px;
+  --mainWhite: #fff;
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  --mainTransition: all 0.3s linear;
+  --mainBorderRadius: 0.25rem;
 }
 
 /*

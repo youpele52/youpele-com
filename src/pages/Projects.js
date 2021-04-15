@@ -1,16 +1,28 @@
 import React from 'react'
+import ProjectList from '../components/ProjectList'
 
 const Projects = () => {
   return (
-    <section className='section '>
+    <div className='section'>
       <div className='title'>
         <h2>Projects</h2>
-        <p>Underconstruction</p>
+        {/* <p>Underconstruction</p> */}
       </div>
+      <ProjectList />
 
       <p></p>
-    </section>
+    </div>
   )
 }
-
 export default Projects
+
+//  <section className='section '>
+//       <div className='title'>
+//         <h2>Projects</h2>
+//         <ProjectList />
+//         <p>Underconstruction</p>
+//       </div>
+
+//       <p></p>
+//     </section>
+//   )

@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { Navbar, Sidebar, Footer } from './components'
-import { Home, About, Poetry, Projects, Error } from './pages'
+import { Home, About, Poetry, Projects, Error, Test } from './pages'
 
 // import pages
 // import Home from './pages/Home'
@@ -32,6 +32,9 @@ function App() {
         </Route>
         <Route path='/about'>
           <About />
+        </Route>
+        <Route path='/test'>
+          <Test />
         </Route>
         <Route exact path='/*'>
           <Error />
