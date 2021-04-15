@@ -44,12 +44,34 @@ const projects = [
     domain: 'Web development',
   },
   {
+    id: 3,
+    title: 'Portfolio Website',
+    img: youpele,
+    description:
+      'Portfolio website, with links to my  personal projects and poetry collections. Yes, I am a poet.',
+    url: 'https://youpele.com/',
+    github: 'https://github.com/youpele52/youpele-com',
+    techstack: 'React, JavaScript, HTML, CSS ',
+    domain: 'Web development',
+  },
+  {
     id: 11,
     title: 'Stripe Clone',
     img: stripe_clone,
     description: 'Stripe Clone',
     url: 'https://stripe-clone2.vercel.app/',
     github: 'https://github.com/youpele52/stripe-clone',
+    techstack: 'React, JavaScript, HTML, CSS ',
+    domain: 'Web development',
+  },
+
+  {
+    id: 12,
+    title: 'food menu',
+    img: food_menu,
+    description: 'food menu',
+    url: 'https://food-menu-silk.vercel.app/',
+    github: 'https://github.com/youpele52/food-menu',
     techstack: 'React, JavaScript, HTML, CSS ',
     domain: 'Web development',
   },
@@ -64,27 +86,7 @@ const projects = [
     techstack: 'Python, NLP',
     domain: 'Data Science',
   },
-  {
-    id: 12,
-    title: 'food menu',
-    img: food_menu,
-    description: 'food menu',
-    url: 'https://food-menu-silk.vercel.app/',
-    github: 'https://github.com/youpele52/food-menu',
-    techstack: 'React, JavaScript, HTML, CSS ',
-    domain: 'Web development',
-  },
-  {
-    id: 3,
-    title: 'Personal Website',
-    img: youpele,
-    description:
-      'Portfolio website, with links to my  personal projects and poetry collections. Yes, I am a poet.',
-    url: 'https://youpele.com/',
-    github: 'https://github.com/youpele52/youpele-com',
-    techstack: 'React, JavaScript, HTML, CSS ',
-    domain: 'Web development',
-  },
+
   {
     id: 4,
     title: 'Pagination - Frontend',
