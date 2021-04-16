@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi'
 import { FaQuoteRight } from 'react-icons/fa'
 import data from '../data'
+import { Link } from 'react-router-dom'
+import { links } from '../utils/constants'
 // import Modal from '../components/Modal'
 import { AppContext, useGlobalContext } from '../context'
 
@@ -62,10 +64,10 @@ function Home() {
               <img className='person-img' src={image} alt={name} />
               <h4>{name}</h4>
               <p className='title'>{title}</p>
-
-              <a href={url} target='_blank' rel='noopener noreferrer'>
+              <Link to={url}>Projects/Works</Link>
+              {/* <a href={url} target='_blank' rel='noopener noreferrer'>
                 Projects/Works
-              </a>
+              </a> */}
               <div className='underline'></div>
               <p className='quote'>{quote}</p>
               <FaQuoteRight className='icon' />
