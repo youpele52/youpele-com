@@ -16,6 +16,12 @@ import grocery_list from '../assets/project_img/grocery-list.png'
 import food_menu from '../assets/project_img/food-menu.png'
 import tours from '../assets/project_img/tours.png'
 import shopping_cart from '../assets/project_img/shopping-cart.png'
+import nyc_citi_bike from '../assets/project_img/nyc_citi_bike.png'
+
+// project domain
+const dataScience = 'data science'
+const webDevelopment = 'web development'
+const webAndData = 'data science and web development'
 
 // list of projects
 const projects = [
@@ -29,7 +35,7 @@ const projects = [
       'https://docs.google.com/file/d/1PxHSWc58H8xI-Km5fTupR3jIGULtqt_u/edit?usp=docslist_api&filetype=mspresentation',
     github: 'https://github.com/youpele52/thesis',
     techstack: 'Python, CNN, DeepMedic, nnU-Net, PyTorch, TensorFlow ',
-    domain: 'Data Science',
+    domain: dataScience,
   },
 
   {
@@ -41,7 +47,7 @@ const projects = [
     url: 'https://youpele-poetry-dark-mode-git-main-youpele52.vercel.app/',
     github: 'https://github.com/youpele52/youpele-poetry-dark-mode',
     techstack: 'React, JavaScript, HTML, CSS ',
-    domain: 'Web development',
+    domain: webDevelopment,
   },
   {
     id: 3,
@@ -52,7 +58,7 @@ const projects = [
     url: 'https://youpele.com/',
     github: 'https://github.com/youpele52/youpele-com',
     techstack: 'React, JavaScript, HTML, CSS ',
-    domain: 'Web development',
+    domain: webDevelopment,
   },
   {
     id: 11,
@@ -62,7 +68,7 @@ const projects = [
     url: 'https://stripe-clone2.vercel.app/',
     github: 'https://github.com/youpele52/stripe-clone',
     techstack: 'React, JavaScript, HTML, CSS ',
-    domain: 'Web development',
+    domain: webDevelopment,
   },
 
   {
@@ -73,7 +79,7 @@ const projects = [
     url: 'https://food-menu-silk.vercel.app/',
     github: 'https://github.com/youpele52/food-menu',
     techstack: 'React, JavaScript, HTML, CSS ',
-    domain: 'Web development',
+    domain: webDevelopment,
   },
   {
     id: 6,
@@ -84,7 +90,7 @@ const projects = [
       'https://github.com/youpele52/Restaurant-Reviews-Classification/blob/main/Classifying_Restaurant_Reviews_Using_NLP.ipynb',
     github: 'https://github.com/youpele52/Restaurant-Reviews-Classification',
     techstack: 'Python, NLP',
-    domain: 'Data Science',
+    domain: dataScience,
   },
 
   {
@@ -95,18 +101,19 @@ const projects = [
     url: 'https://pagination-frontend.vercel.app/',
     github: 'https://github.com/youpele52/pagination-frontend',
     techstack: 'React, JavaScript, HTML, CSS ',
-    domain: 'Web development',
+    domain: webDevelopment,
   },
   {
-    id: 5,
-    title: 'Birthday Reminder',
-    img: birthday_reminder,
-    description: 'Birthday Reminder',
-    url: 'https://birthday-reminder-rho.vercel.app/',
+    id: 15,
+    title: 'NYC Citi Bike Trips',
+    img: nyc_citi_bike,
+    description: `Using Google's BigQuery to obtain useful insights from the big data`,
+    url:
+      'https://console.cloud.google.com/marketplace/product/city-of-new-york/nyc-citi-bike?project=pivotal-canto-271521',
     github:
-      'https://github.com/youpele52/react-projects/tree/main/01-birthday-reminder',
-    techstack: 'React, JavaScript, HTML, CSS ',
-    domain: 'Web development',
+      'https://github.com/youpele52/Toggle_test/blob/main/ACCESS%20TO%20PUBLIC%20DATABASES.sql',
+    techstack: 'BigQuery, SQL, GCP',
+    domain: dataScience,
   },
 
   {
@@ -119,7 +126,7 @@ const projects = [
     github:
       'https://github.com/youpele52/IMDB_movie_review_classification_using_NLP_with_BERT',
     techstack: 'Python, NLP, BERT',
-    domain: 'Data Science',
+    domain: dataScience,
   },
   {
     id: 8,
@@ -129,7 +136,18 @@ const projects = [
     url: 'https://youpele-first-react-app.netlify.app/',
     github: 'https://github.com/youpele52/my-first-react-app',
     techstack: 'React, JavaScript, HTML, CSS ',
-    domain: 'Web development',
+    domain: webDevelopment,
+  },
+  {
+    id: 5,
+    title: 'Birthday Reminder',
+    img: birthday_reminder,
+    description: 'Birthday Reminder',
+    url: 'https://birthday-reminder-rho.vercel.app/',
+    github:
+      'https://github.com/youpele52/react-projects/tree/main/01-birthday-reminder',
+    techstack: 'React, JavaScript, HTML, CSS ',
+    domain: webDevelopment,
   },
 
   {
@@ -141,7 +159,7 @@ const projects = [
     github:
       'https://github.com/youpele52/react-projects/tree/main/15-cocktail-bar',
     techstack: 'React, JavaScript, HTML, CSS ',
-    domain: 'Web development',
+    domain: webDevelopment,
   },
   {
     id: 10,
@@ -151,7 +169,7 @@ const projects = [
     url: 'https://colour-generator.vercel.app/',
     github: 'https://github.com/youpele52/colour-generator',
     techstack: 'React, JavaScript, HTML, CSS ',
-    domain: 'Web development',
+    domain: webDevelopment,
   },
   {
     id: 11,
@@ -161,7 +179,7 @@ const projects = [
     url: 'https://grocery-list-peach.vercel.app/',
     github: 'https://github.com/youpele52/grocery-list',
     techstack: 'React, JavaScript, HTML, CSS ',
-    domain: 'Web development',
+    domain: webDevelopment,
   },
   {
     id: 13,
@@ -171,7 +189,7 @@ const projects = [
     url: 'https://shopping-cart-opal.vercel.app/',
     github: 'https://github.com/youpele52/shopping-cart',
     techstack: 'React, JavaScript, HTML, CSS ',
-    domain: 'Web development',
+    domain: webDevelopment,
   },
   {
     id: 14,
@@ -181,7 +199,7 @@ const projects = [
     url: 'https://tours-three.vercel.app/',
     github: 'https://github.com/youpele52/tours',
     techstack: 'React, JavaScript, HTML, CSS ',
-    domain: 'Web development',
+    domain: webDevelopment,
   },
 ]
 

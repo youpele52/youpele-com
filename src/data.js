@@ -14,7 +14,7 @@ const people = [
     id: 8,
     image: youpele,
     name: 'Youpele Michael',
-    title: 'web developer',
+    title: 'Frontend Engineer',
     url: '/projects',
     quote:
       'The people who are crazy enough to think they can change the world are the ones who do. ~ Steve Jobs',

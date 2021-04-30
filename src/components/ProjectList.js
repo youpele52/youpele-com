@@ -2,13 +2,38 @@ import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import Project from './Project'
 import projectData, { whatNow } from '../utils/project_list'
+import ProjectCategories from './ProjectCategory'
+
+const domains = [
+  'all',
+  ...new Set(projectData.map((project) => project.domain)),
+]
+
 const ProjectList = () => {
-  const [projects, setProjects] = useState(projectData)
+  const [projects, setProjects] = useState([])
   //   console.log(projects)
+  const [projectCategories, setProjectCategories] = useState(domains)
+  const filterItems = (category) => {
+    if (category === 'all') {
+      setProjects(projectData)
+      return
+    }
+    const filteredProjects = projectData.filter(
+      (project) => project.domain === category
+    )
+    setProjects(filteredProjects)
+  }
+  useEffect(() => {
+    setProjects(projectData)
+  }, [projectData])
 
   return (
     <Wrapper>
       <section className='section__'>
+        {/* <ProjectCategories
+          filterItems={filterItems}
+          projectCategories={projectCategories}
+        /> */}
         <div className='projects-center'>
           {projects.map((project) => {
             // console.log(project.title)
