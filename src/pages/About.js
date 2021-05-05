@@ -12,7 +12,17 @@ const About = () => {
         <p>
           Here is my favorite quote from Steve Jobs, "The people who are crazy
           enough to think they can change the world are the ones who do." Now
-          you know about me.
+          you know about me. <br />
+          <div className='link'>
+            <a
+              href='https://github.com/youpele52/youpele/blob/main/Resume/youpeleResumeDSNoRef.pdf'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Resume.
+              <div className='underline'></div>
+            </a>
+          </div>
         </p>
       </section>
     </Wrapper>
@@ -22,6 +32,9 @@ const About = () => {
 const Wrapper = styled.div`
   p {
     text-align: center;
+  }
+  .link {
+    display: inline;
   }
 `
 
