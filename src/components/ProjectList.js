@@ -9,8 +9,10 @@ const domains = [
   ...new Set(projectData.map((project) => project.domain)),
 ]
 
+// list = list.sort(() => Math.random() - 0.5)
+
 const ProjectList = () => {
-  const [projects, setProjects] = useState([])
+  const [projects, setProjects] = useState(projectData)
   //   console.log(projects)
   const [projectCategories, setProjectCategories] = useState(domains)
   const filterItems = (category) => {
@@ -23,9 +25,9 @@ const ProjectList = () => {
     )
     setProjects(filteredProjects)
   }
-  useEffect(() => {
-    setProjects(projectData)
-  }, [projectData])
+  // useEffect(() => {
+  //   setProjects(projectData)
+  // }, [projectData])
 
   return (
     <Wrapper>

@@ -17,6 +17,7 @@ import food_menu from '../assets/project_img/food-menu.png'
 import tours from '../assets/project_img/tours.png'
 import shopping_cart from '../assets/project_img/shopping-cart.png'
 import nyc_citi_bike from '../assets/project_img/nyc_citi_bike.png'
+import social_network_ad from '../assets/project_img/social_network_ad.png'
 
 // project domain
 const dataScience = 'data science'
@@ -126,6 +127,17 @@ const projects = [
     github:
       'https://github.com/youpele52/IMDB_movie_review_classification_using_NLP_with_BERT',
     techstack: 'Python, NLP, BERT',
+    domain: dataScience,
+  },
+  {
+    id: 16,
+    title: 'Social Network Ads',
+    img: social_network_ad,
+    description: 'Social Network Ads',
+    url:
+      'https://github.com/youpele52/social-network-ad/blob/main/codes/Social%20Network%20Ads%20-%20logistic%20regression.ipynb',
+    github: 'https://github.com/youpele52/social-network-ad',
+    techstack: 'Python, scikit-learn, numpy',
     domain: dataScience,
   },
   {
