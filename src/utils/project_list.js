@@ -18,6 +18,7 @@ import tours from '../assets/project_img/tours.png'
 import shopping_cart from '../assets/project_img/shopping-cart.png'
 import nyc_citi_bike from '../assets/project_img/nyc_citi_bike.png'
 import social_network_ad from '../assets/project_img/social_network_ad.png'
+import exploratory_analysis_limehome from '../assets/project_img/exploratory_analysis_limehome.png'
 
 // project domain
 const dataScience = 'data science'
@@ -32,8 +33,7 @@ const projects = [
     img: master_thesis,
     description:
       'Segmentation of CT Scans of Kidney Tumour, Kidney Stones and Phleboliths Using CNN',
-    url:
-      'https://docs.google.com/file/d/1PxHSWc58H8xI-Km5fTupR3jIGULtqt_u/edit?usp=docslist_api&filetype=mspresentation',
+    url: 'https://docs.google.com/file/d/1PxHSWc58H8xI-Km5fTupR3jIGULtqt_u/edit?usp=docslist_api&filetype=mspresentation',
     github: 'https://github.com/youpele52/thesis',
     techstack: 'Python, CNN, DeepMedic, nnU-Net, PyTorch, TensorFlow ',
     domain: dataScience,
@@ -61,6 +61,28 @@ const projects = [
     techstack: 'React, JavaScript, HTML, CSS ',
     domain: webDevelopment,
   },
+
+  {
+    id: 15,
+    title: 'NYC Citi Bike Trips',
+    img: nyc_citi_bike,
+    description: `Using Google's BigQuery to obtain useful insights from the big data`,
+    url: 'https://console.cloud.google.com/marketplace/product/city-of-new-york/nyc-citi-bike?project=pivotal-canto-271521',
+    github:
+      'https://github.com/youpele52/Toggle_test/blob/main/ACCESS%20TO%20PUBLIC%20DATABASES.sql',
+    techstack: 'BigQuery, SQL, GCP',
+    domain: dataScience,
+  },
+  {
+    id: 17,
+    title: 'Exploratory Analysis',
+    img: exploratory_analysis_limehome,
+    description: 'Exploratory Analysis',
+    url: 'https://github.com/youpele52/LimeHome/blob/main/Exploratory%20Analysis.pdf',
+    github: 'https://github.com/youpele52/LimeHome',
+    techstack: 'Python, SQL, Pandas, scikit learn',
+    domain: dataScience,
+  },
   {
     id: 11,
     title: 'Stripe Clone',
@@ -87,8 +109,7 @@ const projects = [
     title: 'Restaurant Reviews Classification',
     img: restaurant_reviews,
     description: 'Restaurant Reviews Classification',
-    url:
-      'https://github.com/youpele52/Restaurant-Reviews-Classification/blob/main/Classifying_Restaurant_Reviews_Using_NLP.ipynb',
+    url: 'https://github.com/youpele52/Restaurant-Reviews-Classification/blob/main/Classifying_Restaurant_Reviews_Using_NLP.ipynb',
     github: 'https://github.com/youpele52/Restaurant-Reviews-Classification',
     techstack: 'Python, NLP',
     domain: dataScience,
@@ -104,26 +125,13 @@ const projects = [
     techstack: 'React, JavaScript, HTML, CSS ',
     domain: webDevelopment,
   },
-  {
-    id: 15,
-    title: 'NYC Citi Bike Trips',
-    img: nyc_citi_bike,
-    description: `Using Google's BigQuery to obtain useful insights from the big data`,
-    url:
-      'https://console.cloud.google.com/marketplace/product/city-of-new-york/nyc-citi-bike?project=pivotal-canto-271521',
-    github:
-      'https://github.com/youpele52/Toggle_test/blob/main/ACCESS%20TO%20PUBLIC%20DATABASES.sql',
-    techstack: 'BigQuery, SQL, GCP',
-    domain: dataScience,
-  },
 
   {
     id: 7,
     title: 'Movie Reviews Classification',
     img: movie_reviews,
     description: ' Reviews Classification',
-    url:
-      'https://github.com/youpele52/IMDB_movie_review_classification_using_NLP_with_BERT/blob/main/NLP_with_Bert_for_Sentiment_Analysis.ipynb',
+    url: 'https://github.com/youpele52/IMDB_movie_review_classification_using_NLP_with_BERT/blob/main/NLP_with_Bert_for_Sentiment_Analysis.ipynb',
     github:
       'https://github.com/youpele52/IMDB_movie_review_classification_using_NLP_with_BERT',
     techstack: 'Python, NLP, BERT',
@@ -134,8 +142,7 @@ const projects = [
     title: 'Social Network Ads',
     img: social_network_ad,
     description: 'Social Network Ads',
-    url:
-      'https://github.com/youpele52/social-network-ad/blob/main/codes/Social%20Network%20Ads%20-%20logistic%20regression.ipynb',
+    url: 'https://github.com/youpele52/social-network-ad/blob/main/codes/Social%20Network%20Ads%20-%20logistic%20regression.ipynb',
     github: 'https://github.com/youpele52/social-network-ad',
     techstack: 'Python, scikit-learn, numpy',
     domain: dataScience,
