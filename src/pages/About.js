@@ -15,7 +15,7 @@ const About = () => {
           you know about me. <br />
           <div className='link'>
             <a
-              href='https://github.com/youpele52/youpele/blob/main/Resume/youpeleResumeDSNoRef.pdf'
+              href='https://youpele52.github.io/Resume/'
               target='_blank'
               rel='noopener noreferrer'
             >
