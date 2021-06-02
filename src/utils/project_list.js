@@ -19,6 +19,8 @@ import shopping_cart from '../assets/project_img/shopping-cart.png'
 import nyc_citi_bike from '../assets/project_img/nyc_citi_bike.png'
 import social_network_ad from '../assets/project_img/social_network_ad.png'
 import exploratory_analysis_limehome from '../assets/project_img/exploratory_analysis_limehome.png'
+import city_api from '../assets/project_img/city_api.png'
+import todo_list from '../assets/project_img/todo_list.png'
 
 // project domain
 const dataScience = 'data science'
@@ -28,7 +30,7 @@ const webAndData = 'data science and web development'
 // list of projects
 const projects = [
   {
-    id: 1,
+    id: 0,
     title: 'Segmentation of CT Scans Using CNN',
     img: master_thesis,
     description:
@@ -40,7 +42,7 @@ const projects = [
   },
 
   {
-    id: 2,
+    id: 1,
     title: "Youpele's Poetry",
     img: poetry,
     description:
@@ -51,7 +53,7 @@ const projects = [
     domain: webDevelopment,
   },
   {
-    id: 3,
+    id: 2,
     title: 'Portfolio Website',
     img: youpele,
     description:
@@ -63,7 +65,7 @@ const projects = [
   },
 
   {
-    id: 15,
+    id: 3,
     title: 'NYC Citi Bike Trips',
     img: nyc_citi_bike,
     description: `Using Google's BigQuery to obtain useful insights from the big data`,
@@ -74,8 +76,8 @@ const projects = [
     domain: dataScience,
   },
   {
-    id: 17,
-    title: 'Exploratory Analysis',
+    id: 4,
+    title: 'Hotel Exploratory Analysis',
     img: exploratory_analysis_limehome,
     description: 'Exploratory Analysis',
     url: 'https://github.com/youpele52/LimeHome/blob/main/Exploratory%20Analysis.pdf',
@@ -84,7 +86,7 @@ const projects = [
     domain: dataScience,
   },
   {
-    id: 11,
+    id: 5,
     title: 'Stripe Clone',
     img: stripe_clone,
     description: 'Stripe Clone',
@@ -93,9 +95,29 @@ const projects = [
     techstack: 'React, JavaScript, HTML, CSS ',
     domain: webDevelopment,
   },
+  {
+    id: 18,
+    title: 'City Time - Backend',
+    img: city_api,
+    description: 'City Time',
+    url: 'https://github.com/youpele52/CityAPI',
+    github: 'https://github.com/youpele52/CityAPI',
+    techstack: 'Python, FastAPI',
+    domain: webDevelopment,
+  },
+  {
+    id: 19,
+    title: 'Todo List - Backend',
+    img: todo_list,
+    description: 'Todo List - Backend',
+    url: 'https://github.com/youpele52/todo-list',
+    github: 'https://github.com/youpele52/todo-list',
+    techstack: 'Python, FastAPI',
+    domain: webDevelopment,
+  },
 
   {
-    id: 12,
+    id: 6,
     title: 'food menu',
     img: food_menu,
     description: 'food menu',
@@ -105,7 +127,7 @@ const projects = [
     domain: webDevelopment,
   },
   {
-    id: 6,
+    id: 7,
     title: 'Restaurant Reviews Classification',
     img: restaurant_reviews,
     description: 'Restaurant Reviews Classification',
@@ -116,7 +138,7 @@ const projects = [
   },
 
   {
-    id: 4,
+    id: 8,
     title: 'Pagination - Frontend',
     img: pagination,
     description: 'A webpage displaying few github users',
@@ -127,7 +149,7 @@ const projects = [
   },
 
   {
-    id: 7,
+    id: 9,
     title: 'Movie Reviews Classification',
     img: movie_reviews,
     description: ' Reviews Classification',
@@ -138,7 +160,7 @@ const projects = [
     domain: dataScience,
   },
   {
-    id: 16,
+    id: 10,
     title: 'Social Network Ads',
     img: social_network_ad,
     description: 'Social Network Ads',
@@ -148,7 +170,7 @@ const projects = [
     domain: dataScience,
   },
   {
-    id: 8,
+    id: 11,
     title: 'My first react app',
     img: first_react_app,
     description: 'My first react app',
@@ -158,7 +180,7 @@ const projects = [
     domain: webDevelopment,
   },
   {
-    id: 5,
+    id: 12,
     title: 'Birthday Reminder',
     img: birthday_reminder,
     description: 'Birthday Reminder',
@@ -170,7 +192,7 @@ const projects = [
   },
 
   {
-    id: 9,
+    id: 13,
     title: 'Cocktail bar',
     img: cocktail_bar,
     description: 'Cocktail bar',
@@ -181,7 +203,7 @@ const projects = [
     domain: webDevelopment,
   },
   {
-    id: 10,
+    id: 14,
     title: 'Colour generator',
     img: colour_generator,
     description: 'Colour generator',
@@ -191,7 +213,7 @@ const projects = [
     domain: webDevelopment,
   },
   {
-    id: 11,
+    id: 15,
     title: 'Grocery list',
     img: grocery_list,
     description: 'Grocery list',
@@ -201,7 +223,7 @@ const projects = [
     domain: webDevelopment,
   },
   {
-    id: 13,
+    id: 16,
     title: 'Shopping cart',
     img: shopping_cart,
     description: 'Shopping cart',
@@ -211,7 +233,7 @@ const projects = [
     domain: webDevelopment,
   },
   {
-    id: 14,
+    id: 17,
     title: 'Tours',
     img: tours,
     description: 'Tours',
