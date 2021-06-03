@@ -21,6 +21,7 @@ import social_network_ad from '../assets/project_img/social_network_ad.png'
 import exploratory_analysis_limehome from '../assets/project_img/exploratory_analysis_limehome.png'
 import city_api from '../assets/project_img/city_api.png'
 import todo_list from '../assets/project_img/todo_list.png'
+import hulu from '../assets/project_img/hulu.png'
 
 // project domain
 const dataScience = 'data science'
@@ -43,15 +44,15 @@ const projects = [
 
   {
     id: 1,
-    title: "Youpele's Poetry",
-    img: poetry,
-    description:
-      'Webpage of links to some of my poems. The page has a darkmode toggle feature.',
-    url: 'https://youpele-poetry-dark-mode-git-main-youpele52.vercel.app/',
-    github: 'https://github.com/youpele52/youpele-poetry-dark-mode',
-    techstack: 'React, JavaScript, HTML, CSS ',
+    title: 'Hulu Clone',
+    img: hulu,
+    description: 'Hulu clone',
+    url: 'https://hulu-three-tau.vercel.app/',
+    github: 'https://github.com/youpele52/hulu',
+    techstack: 'Next, React, TailWindCSS, JavaScript, HTML, CSS ',
     domain: webDevelopment,
   },
+
   {
     id: 2,
     title: 'Portfolio Website',
@@ -92,6 +93,17 @@ const projects = [
     description: 'Stripe Clone',
     url: 'https://stripe-clone2.vercel.app/',
     github: 'https://github.com/youpele52/stripe-clone',
+    techstack: 'React, JavaScript, HTML, CSS ',
+    domain: webDevelopment,
+  },
+  {
+    id: 19,
+    title: "Youpele's Poetry",
+    img: poetry,
+    description:
+      'Webpage of links to some of my poems. The page has a darkmode toggle feature.',
+    url: 'https://youpele-poetry-dark-mode-git-main-youpele52.vercel.app/',
+    github: 'https://github.com/youpele52/youpele-poetry-dark-mode',
     techstack: 'React, JavaScript, HTML, CSS ',
     domain: webDevelopment,
   },
