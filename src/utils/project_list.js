@@ -49,7 +49,7 @@ const projects = [
     description: 'Hulu clone',
     url: 'https://hulu-three-tau.vercel.app/',
     github: 'https://github.com/youpele52/hulu',
-    techstack: 'Next, React, TailWindCSS, JavaScript, HTML, CSS ',
+    techstack: 'Next, React, TailwindCSS, JavaScript, HTML, CSS ',
     domain: webDevelopment,
   },
 
