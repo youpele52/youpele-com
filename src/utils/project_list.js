@@ -22,6 +22,7 @@ import exploratory_analysis_limehome from '../assets/project_img/exploratory_ana
 import city_api from '../assets/project_img/city_api.png'
 import todo_list from '../assets/project_img/todo_list.png'
 import hulu from '../assets/project_img/hulu.png'
+import fashion_mnist from '../assets/project_img/fashion_mnist.png'
 
 // project domain
 const dataScience = 'data science'
@@ -64,7 +65,16 @@ const projects = [
     techstack: 'React, JavaScript, HTML, CSS ',
     domain: webDevelopment,
   },
-
+  {
+    id: 21,
+    title: 'WGAN on FashionMNIST',
+    img: fashion_mnist,
+    description: 'WGAN on FashionMNIST',
+    url: 'https://github.com/youpele52/Sensity',
+    github: 'https://github.com/youpele52/Sensity',
+    techstack: 'Python, PyTorch, WGAN, Flask, HTML',
+    domain: webAndData,
+  },
   {
     id: 3,
     title: 'NYC Citi Bike Trips',
@@ -86,6 +96,7 @@ const projects = [
     techstack: 'Python, SQL, Pandas, scikit learn',
     domain: dataScience,
   },
+
   {
     id: 5,
     title: 'Stripe Clone',
