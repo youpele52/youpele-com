@@ -67,7 +67,7 @@ export default Poetry
 
 const Wrapper = styled.div`
   .section__ {
-    padding: 5rem 0;
+    padding: 1.5rem 0;
   }
   .section-title {
     font-size: 2rem;
