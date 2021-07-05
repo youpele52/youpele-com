@@ -4,11 +4,10 @@ import { FaQuoteRight } from 'react-icons/fa'
 import data from '../data'
 import { Link } from 'react-router-dom'
 import { links } from '../utils/constants'
-// import Modal from '../components/Modal'
+
 import { AppContext, useGlobalContext } from '../context'
 
 function Home() {
-  // const { openModal } = useGlobalContext()
   const [people, setPeople] = useState(data)
   const [index, setIndex] = useState(0)
 

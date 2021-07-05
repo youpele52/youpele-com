@@ -1,3 +1,8 @@
+/* Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /*
 =============== 
 Variables
@@ -127,6 +132,7 @@ h4 {
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
+  color: var(--clr-normal-text);
 }
 h1 {
   font-size: 3rem;

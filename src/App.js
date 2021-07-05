@@ -2,17 +2,10 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { Navbar, Sidebar, Footer } from './components'
 import { Home, About, Poetry, Projects, Error, Test } from './pages'
-
-// import pages
-// import Home from './pages/Home'
-// import About from './pages/About'
-// import Poetry from './pages/Poetry'
-// import Projects from './pages/Projects'
-
-// import components
-// import Footer from './components/Footer'
-
-// import Modal from './components/Modal'
+import FantasySeventySevens from './pages/Poetry/FantasySeventySevens'
+import Fiction from './pages/Poetry/Fiction'
+import FictionSinglePoem from './pages/Poetry/Fiction/SinglePoem'
+import FantasySinglePoem from './pages/Poetry/FantasySeventySevens/SinglePoem'
 
 function App() {
   return (
@@ -24,7 +17,7 @@ function App() {
         <Route exact path='/'>
           <Home />
         </Route>
-        <Route path='/poetry'>
+        <Route exact path='/poetry'>
           <Poetry />
         </Route>
         <Route path='/projects'>
@@ -35,6 +28,18 @@ function App() {
         </Route>
         <Route path='/test'>
           <Test />
+        </Route>
+        <Route exact path='/poetry/FantasySeventySevens'>
+          <FantasySeventySevens />
+        </Route>
+        <Route path='/poetry/FantasySeventySevens/:id'>
+          <FantasySinglePoem />
+        </Route>
+        <Route exact path='/poetry/Fiction'>
+          <Fiction />
+        </Route>
+        <Route path='/poetry/Fiction/:id'>
+          <FictionSinglePoem />
         </Route>
         <Route exact path='/*'>
           <Error />
