@@ -23,7 +23,7 @@ const Poetry = () => {
   return (
     <Wrapper>
       <section className='section '>
-        <div className='title'>
+        <div className='title slide'>
           <h2>Poetry</h2>
         </div>
         <section className='section__'>
@@ -94,5 +94,20 @@ const Wrapper = styled.div`
     .projects-center {
       grid-template-columns: repeat(auto-fill, minmax(338.8px, 1fr));
     }
+  }
+  @keyframes slideInFromTop {
+    0% {
+      transform: translateY(-250%);
+    }
+    90% {
+      transform: translateY(20%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .slide {
+    animation: 1s ease-out 0s 1 slideInFromTop;
   }
 `

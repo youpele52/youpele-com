@@ -5,14 +5,17 @@ const About = () => {
   return (
     <Wrapper>
       <section className='section  '>
-        <div className='title'>
+        <div className='title slide '>
           <h2>About me</h2>
         </div>
 
         <p>
-          Here is my favorite quote from Steve Jobs, "The people who are crazy
-          enough to think they can change the world are the ones who do." Now
-          you know about me. <br />
+          "The people who are crazy enough to think they can change the world
+          are the ones who do" ~ Steve Jobs. <br />
+          I'm crazy enough to think that being a Data Scientist and a Software
+          Developer, and working on the right project I can change the world for
+          better.
+          <br />
           <div className='link'>
             <a
               href='https://youpele52.github.io/Resume/'
@@ -32,9 +35,36 @@ const About = () => {
 const Wrapper = styled.div`
   p {
     text-align: center;
+    padding: 1.5rem 0;
+    animation: 1s ease-out 0s 1 slideInFromSide;
   }
   .link {
     display: inline;
+  }
+  @keyframes slideInFromTop {
+    0% {
+      transform: translateY(-250%);
+    }
+    90% {
+      transform: translateY(20%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .slide {
+    animation: 1s ease-out 0s 1 slideInFromTop;
+  }
+
+  @keyframes slideInFromSide {
+    0% {
+      transform: translateX(100%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
   }
 `
 

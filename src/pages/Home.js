@@ -3,6 +3,7 @@ import { FiChevronRight, FiChevronLeft } from 'react-icons/fi'
 import { FaQuoteRight } from 'react-icons/fa'
 import data from '../data'
 import { Link } from 'react-router-dom'
+import styled from 'styled-components'
 import { links } from '../utils/constants'
 
 import { AppContext, useGlobalContext } from '../context'
@@ -35,9 +36,9 @@ function Home() {
   }, [index])
 
   return (
-    <section className='section'>
+    <Wrapper className='section'>
       {/* suggestion: you can move the title to a separate component */}
-      <div className='title'>
+      <div className='title slide'>
         <h2>
           <span>@</span>Youpele52
         </h2>
@@ -90,8 +91,26 @@ function Home() {
           <FiChevronRight />
         </button>
       </div>
-    </section>
+    </Wrapper>
   )
 }
 
 export default Home
+
+const Wrapper = styled.div`
+  @keyframes slideInFromTop {
+    0% {
+      transform: translateY(-250%);
+    }
+    90% {
+      transform: translateY(20%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .slide {
+    animation: 1s ease-out 0s 1 slideInFromTop;
+  }
+`
