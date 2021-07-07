@@ -27,7 +27,7 @@ const Poetry = () => {
           <h1>Poetry</h1>
         </div>
         <section className='section__'>
-          <h3 className='section-title'>New </h3>
+          <h2 className='section-title'>New </h2>
           <div className='projects-center'>
             <PoemCard poem={Darker} />
             <PoemCard poem={Chapter4} />
@@ -35,7 +35,7 @@ const Poetry = () => {
           </div>
         </section>
         <section className='section__'>
-          <h3 className='section-title'>Red Hot on Wattpad.com</h3>
+          <h2 className='section-title'>Red Hot on Wattpad.com</h2>
           <div className='projects-center'>
             <PoemCard poem={BlackQueenCleopatra} />
             <PoemCard poem={Street66} />
@@ -43,7 +43,7 @@ const Poetry = () => {
           </div>
         </section>
         <section className='section__'>
-          <h3 className='section-title'>Collections</h3>
+          <h2 className='section-title'>Collections</h2>
           <div className='projects-center'>
             <PoemCard poem={Fiction} />
             <PoemCard poem={FantasySeventySevens} />
@@ -97,7 +97,7 @@ const Wrapper = styled.div`
   }
   @keyframes slideInFromTop {
     0% {
-      transform: translateY(-250%);
+      transform: translateY(-150%);
     }
     90% {
       transform: translateY(20%);

@@ -100,7 +100,7 @@ export default Home
 const Wrapper = styled.div`
   @keyframes slideInFromTop {
     0% {
-      transform: translateY(-250%);
+       transform: translateY(-150%);
     }
     90% {
       transform: translateY(20%);
