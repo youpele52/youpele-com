@@ -398,8 +398,8 @@ const poemInHTML = `
 const poemBody = poemInHTML
   .replace(/<[^>]*>?/gm, '')
   .replace(/[#+]/g, '')
-  .replace(/\s\s+/g, '::')
-  .split('::')
+  .replace(/\s\s+/g, '|')
+  .split('|')
 
 // const mew = poemBody.map((poem) => console.log(poem))
 

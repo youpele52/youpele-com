@@ -20,7 +20,7 @@ const SinglePoem = () => {
           if (Number(id) === poem.id) {
             return (
               <main key={id}>
-                <div className='title text-red-600 '>
+                <div className='title '>
                   <Link to='/poetry/FantasySeventySevens' className=''>
                     <h2>Fantasy Seventy Sevens</h2>
                     <div className='underline'></div>
