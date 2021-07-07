@@ -9,7 +9,7 @@ function index() {
   return (
     <div className='section'>
       <div className='title'>
-        <h3>Fantasy Seventy Sevens</h3>
+        <h1>Fantasy Seventy Sevens</h1>
       </div>
 
       <PoemList />
@@ -28,7 +28,7 @@ function index() {
 export default index
 
 const Wrapper = styled.div`
-  h3 {
+  h1 {
     padding: 2rem;
   }
   .link {

@@ -6,7 +6,7 @@ const About = () => {
     <Wrapper>
       <section className='section  '>
         <div className='title slide '>
-          <h2>About me</h2>
+          <h1>About me</h1>
         </div>
 
         <p>

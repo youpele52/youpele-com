@@ -22,10 +22,10 @@ const SinglePoem = () => {
               <main key={id}>
                 <div className='title '>
                   <Link to='/poetry/FantasySeventySevens' className=''>
-                    <h2>Fantasy Seventy Sevens</h2>
+                    <h1>Fantasy Seventy Sevens</h1>
                     <div className='underline'></div>
                   </Link>
-                  <h3>{poem.title}</h3>
+                  <h2>{poem.title}</h2>
                 </div>
                 {/* <div className='title'> */}
                 {/* </div> */}

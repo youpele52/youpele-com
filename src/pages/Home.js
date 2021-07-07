@@ -39,11 +39,11 @@ function Home() {
     <Wrapper className='section'>
       {/* suggestion: you can move the title to a separate component */}
       <div className='title slide'>
-        <h2>
+        <h1>
           <span>@</span>Youpele52
-        </h2>
+        </h1>
       </div>
-      <div className='section-center'>
+      <div className='section-center slide2'>
         {people.map((person, personIndex) => {
           const { id, image, name, title, quote, url } = person
 
@@ -112,5 +112,17 @@ const Wrapper = styled.div`
 
   .slide {
     animation: 1s ease-out 0s 1 slideInFromTop;
+  }
+  .slide2 {
+    animation: 1s ease-out 0s 1 slideInFromSide;
+  }
+  @keyframes slideInFromSide {
+    0% {
+      transform: translateX(100%);
+    
+
+    100% {
+      transform: translateX(0);
+    }
   }
 `

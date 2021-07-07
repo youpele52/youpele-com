@@ -24,7 +24,7 @@ const Poetry = () => {
     <Wrapper>
       <section className='section '>
         <div className='title slide'>
-          <h2>Poetry</h2>
+          <h1>Poetry</h1>
         </div>
         <section className='section__'>
           <h3 className='section-title'>New </h3>

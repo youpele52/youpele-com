@@ -6,8 +6,8 @@ import styled from 'styled-components'
 
 const SinglePoem = () => {
   const { id } = useParams()
-  console.log(poetry)
-  console.log(id)
+  // console.log(poetry)
+  // console.log(id)
 
   //   const mm = poetry.map((poem) => {
   //     if (id == poem.id) {
@@ -19,15 +19,15 @@ const SinglePoem = () => {
       <section className='section'>
         {poetry.map((poem) => {
           if (id == poem.id) {
-            console.log(poem)
+            // console.log(poem)
             return (
               <main key={id}>
                 <div className='title '>
                   <Link to='/poetry/Fiction' className=''>
-                    <h2>Fiction</h2>
+                    <h1>Fiction</h1>
                     <div className='underline'></div>
                   </Link>
-                  <h3>{poem.title}</h3>
+                  <h2>{poem.title}</h2>
                 </div>
                 {/* <div className='title'> */}
                 {/* </div> */}
@@ -54,9 +54,6 @@ const SinglePoem = () => {
 export default SinglePoem
 
 const Wrapper = styled.div`
-  h3 {
-    padding: 2rem;
-  }
   .link {
     font-weight: bold;
     display: flex;

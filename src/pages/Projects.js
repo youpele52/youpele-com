@@ -7,7 +7,7 @@ const Projects = () => {
     <Wrapper>
       <div className='section'>
         <div className='title slide'>
-          <h2>Projects</h2>
+          <h1>Projects</h1>
           {/* <p>Underconstruction</p> */}
         </div>
         <ProjectList />
