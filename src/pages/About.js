@@ -13,8 +13,8 @@ const About = () => {
           "The people who are crazy enough to think they can change the world
           are the ones who do" ~ Steve Jobs. <br />
           I'm crazy enough to think that being a Data Scientist and a Software
-          Developer, and working on the right project I can change the world for
-          better.
+          Developer, and working on the right projects I can change the world
+          for better.
           <br />
           <div className='link'>
             <a

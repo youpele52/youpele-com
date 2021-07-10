@@ -23,6 +23,7 @@ import city_api from '../assets/project_img/city_api.png'
 import todo_list from '../assets/project_img/todo_list.png'
 import hulu from '../assets/project_img/hulu.png'
 import fashion_mnist from '../assets/project_img/fashion_mnist.png'
+import memories from '../assets/project_img/memories.png'
 
 // project domain
 const dataScience = 'data science'
@@ -51,6 +52,17 @@ const projects = [
     url: 'https://hulu-three-tau.vercel.app/',
     github: 'https://github.com/youpele52/hulu',
     techstack: 'Next, React, TailwindCSS, JavaScript, HTML, CSS ',
+    domain: webDevelopment,
+  },
+  {
+    id: 24,
+    title: 'Memories',
+    img: memories,
+    description: 'Memories',
+    url: 'https://memories-one.vercel.app/',
+    github: 'https://github.com/youpele52/Memories',
+    techstack:
+      'MongoDB, Express, React, Node, Next, TailwindCSS, JavaScript etc  ',
     domain: webDevelopment,
   },
 
